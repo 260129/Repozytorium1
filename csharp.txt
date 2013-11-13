@@ -1,0 +1,11 @@
+using System;
+namespace indeks
+{
+    class Indeks 
+    {
+        static void Main() 
+        {
+            Console.WriteLine("260129");
+        }
+    }
+}
