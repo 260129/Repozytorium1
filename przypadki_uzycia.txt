@@ -1,0 +1,88 @@
+PRZYPADKI UŻYCIA
+________________
+
+1. Wstawienie na mape obiektow.
+2. Usuniecie obiektu z mapy.
+3. Tworzenie i rozmieszczenie NPC'ów na mapie.
+4. Załadowanie mapy do gry.
+5. Edycja grafiki gotowych elementów do mapy.
+6. Ustawienie rozmiaru mapy (w pikselach).
+
+------
+
+*Wstawienie na mape obiektow:
+
+Podstawowy scenariusz sukcesu:
+
+1. Użytkownik wybiera z menu tworzenia obiektów opcję "bohater".
+2. Użytkownik w polu o nazwie "ilosc" podaje liczbę tworzonych obiektów.
+3. Użytkownik klika w przycisk "Stwórz".
+4. Obiekty pojawiają się na mapie (domyślnie w lewym górnym rogu).
+
+Rozszerzenia:
+
+4a. Obiekt nie pojawia się na mapie, ponieważ próbowano postawić bohatera na tych samych polach, gdzie stoi już inny bohater.
+ 4a1. Użytkownik musi przenieść obecnego bohatera w inne miejsce bądź ustawić pozycję początkową nowotworzonego       bohatera w menu na inną niż domyślna.
+
+------
+
+*Usuniecie obiektu z mapy:
+
+Podstawowy scenariusz sukcesu:
+
+1. Użytkownik klika na obiekt prawym przyciskiem myszy.
+2. Z rozwijanej listy wybiera opcję "Usuń obiekt".
+3. Obiekt został usunięty z mapy.
+
+------ 
+
+*Tworzenie i rozmieszczenie NPC'ów na mapie
+
+Podstawowy scenariusz sukcesu:
+
+1. Użytkownik wybiera klasę tworzonej postaci (np. mag, wojownik, paladyn itd.).
+2. Użytkownik ustawia dostępne dla danej klasy postaci atrybuty, takie jak wygląd, parametry poszczególnych umiejętności,  broń i inne przedmioty dostępne na początku gry dla danej postaci itd.
+3. UŻytkownik powtarza powyższe czynności dla każdego tworzonego NPC'a.
+4. Użytkownik ustala, jakie będą relacje między stworzonymi postaciami na zasadzie "wróg/przyjaciel" oraz rozmieszcza je na mapie.
+
+Rozszerzenia:
+
+1a. Użytkownik ma limit na stworzenie postaci danej klasy. Nie może np. stworzyć kolejnego maga, jeśli wcześniej wyczerpał limit dla tej klasy.
+3a. Możliwa ilość stworzonych postaci jest ograniczona. Liczba NPC'ów występujących w przeciwnych sobie grupach musi być też zblizona.
+
+------
+
+*Załadowanie mapy do gry
+
+Podstawowy scenariusz sukcesu:
+
+1. Użytkownik wybiera mapę z tych, które ukończył w edytorze.
+2. UŻytkownik decyduje, do jakiego trybu rozgrywki mapa będzie przeznaczona (online, offline).
+3. Użytkownik zatwierdza dodanie mapy.
+
+Rozszerzenia:
+
+1a. Nie jest możliwe dodanie mapy, która nie nadaje się jeszcze do gry (np. jest na niej zbyt mało NPC'ów).
+
+------
+
+*Edycja grafiki gotowych elementów do gry
+
+Podstawowy scenariusz sukcesu:
+
+1. Użytkownik wybiera z menu opcję edycji elementów do gry.
+2. Użytkownik wybiera do jakiego rodzaju gry ma edytować grafikę (platformowej lub z widokiem z góry).
+3. Użytkownik wybiera konkretny element, który zamierza edytować.
+4. System otwiera okno edycji grafiki.
+5. Użytkownik po zmianach zatwierdza nową grafikę obiektu.
+6. Użytkownik klika w "Zapisz" i podaje nazwę nowej paczki tekstury.
+7. System zapisuje nową teksturę, którą można wczytać podczas tworzenia nowej mapy.
+
+
+Rozszerzenia:
+
+6a. Podana nazwa paczki tekstury już istnieje.
+  6a1. System zadaje pytanie, czy nadpisać starą teksturę lub wprowadzić nową nazwę. 
+
+------
+
